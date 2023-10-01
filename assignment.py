@@ -55,5 +55,5 @@ for student, grade in grades.items():
         student_with_lowest_grade = student
 
 # Print the results
-print(f"Student with the highest grade: {student_with_highest_grade} (Grade: {highest_grade})")
-print(f"Student with the lowest grade: {student_with_lowest_grade} (Grade: {lowest_grade})")
+print(f"Student with the highest grade: {'name'} (Grade: {highest_grade})")
+print(f"Student with the lowest grade: {'name'} (Grade: {lowest_grade})")
