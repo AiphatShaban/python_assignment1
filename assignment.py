@@ -40,29 +40,20 @@ for i in range(size):
             'grade':grades,
         }
 # Initialize variables to store the highest and lowest grades and corresponding student names
-highest_grade = str('-inf')  # Initialize as negative infinity
-lowest_grade = str('inf')    # Initialize as positive infinity
-student_with_highest_grade = None
-student_with_lowest_grade = None
+highest_grade = str('grade')  # Initialize as negative infinity
+lowest_grade = str('-grade')    # Initialize as positive infinity
+student_with_highest_grade = "name"
+student_with_lowest_grade = "-name"
 
 # Iterate through the dictionary to find the highest and lowest grades
 for student, grade in grades.items():
-    if grade > highest_grade:
+    if grade < highest_grade:
         highest_grade = grade
         student_with_highest_grade = student
-    if grade < lowest_grade:
+    if grade > lowest_grade:
         lowest_grade = grade
         student_with_lowest_grade = student
 
 # Print the results
 print(f"Student with the highest grade: {student_with_highest_grade} (Grade: {highest_grade})")
 print(f"Student with the lowest grade: {student_with_lowest_grade} (Grade: {lowest_grade})")
-
-
-
-
-
-
-
-
-    
